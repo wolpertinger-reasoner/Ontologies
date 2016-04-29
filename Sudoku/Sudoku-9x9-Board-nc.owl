@@ -1,0 +1,2444 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/wolpertinger/sudoku"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/wolpertinger/sudoku">
+    <Prefix name="" IRI="http://www.semanticweb.org/wolpertinger/sudoku/#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents an empty 9x9 Sudokuboard game; i.e. no number is placed on any cell. Use one of the ABoxes (e.g. 9x9-Sudoku-Instance-01).</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Five"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Col"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#One"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Seven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Six"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Row"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Sqr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Nine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Three"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Eight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Two"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/#Num"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Eight"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Five"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Nine"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#One"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Seven"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Six"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Three"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Col"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Two"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Eight"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Five"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Nine"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This axiom yields a non-deterministic choice, ultimately translating to aguessing rule in ASP.</Literal>
+        </Annotation>
+        <Class IRI="/#Num"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+            <Class IRI="/#Eight"/>
+            <Class IRI="/#Five"/>
+            <Class IRI="/#Nine"/>
+            <Class IRI="/#One"/>
+            <Class IRI="/#Seven"/>
+            <Class IRI="/#Six"/>
+            <Class IRI="/#Three"/>
+            <Class IRI="/#Two"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#One"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Eight"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Five"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Nine"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#One"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Seven"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Six"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Three"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Row"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Two"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Seven"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Six"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Eight"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Five"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Nine"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#One"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Seven"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Six"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Three"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Sqr"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="/#Two"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Three"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/#Two"/>
+        <Class IRI="/#Num"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        <Class IRI="/#Eight"/>
+        <Class IRI="/#Five"/>
+        <Class IRI="/#Nine"/>
+        <Class IRI="/#One"/>
+        <Class IRI="/#Seven"/>
+        <Class IRI="/#Six"/>
+        <Class IRI="/#Three"/>
+        <Class IRI="/#Two"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/#Col"/>
+        <Class IRI="/#Num"/>
+        <Class IRI="/#Row"/>
+        <Class IRI="/#Sqr"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99"/>
+    </ObjectPropertyAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <Class IRI="/#Num"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/#Col</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents a column in 9x9 Sudoku.
+
+Each column has exactly 1 One ...Nine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/#Num</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of the numbers One ... Nine
+Initially we assign all 81 individuals n11...n99 to this class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/#Row</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of 9 Rows in a 9x9 Sudko.
+
+Each row has exactly 1 One ...Nine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/#Sqr</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of the 9 Squares in a 9x9 Sudoku.
+
+Each square has exactly 1 One ...Nine.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

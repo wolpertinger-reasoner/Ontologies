@@ -23,10 +23,10 @@
         <NamedIndividual abbreviatedIRI=":s1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c2"/>
+        <NamedIndividual abbreviatedIRI=":n88"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n88"/>
+        <NamedIndividual abbreviatedIRI=":c2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI=":n76"/>
@@ -77,10 +77,10 @@
         <NamedIndividual abbreviatedIRI=":n93"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n81"/>
+        <NamedIndividual abbreviatedIRI=":c9"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c9"/>
+        <NamedIndividual abbreviatedIRI=":n81"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI=":n49"/>
@@ -382,119 +382,6 @@
     <Declaration>
         <Class abbreviatedIRI=":Nine"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="owl:Thing"/>
-        <ObjectOneOf>
-            <NamedIndividual abbreviatedIRI=":n49"/>
-            <NamedIndividual abbreviatedIRI=":n47"/>
-            <NamedIndividual abbreviatedIRI=":n48"/>
-            <NamedIndividual abbreviatedIRI=":n45"/>
-            <NamedIndividual abbreviatedIRI=":n46"/>
-            <NamedIndividual abbreviatedIRI=":n43"/>
-            <NamedIndividual abbreviatedIRI=":n44"/>
-            <NamedIndividual abbreviatedIRI=":n41"/>
-            <NamedIndividual abbreviatedIRI=":n42"/>
-            <NamedIndividual abbreviatedIRI=":n38"/>
-            <NamedIndividual abbreviatedIRI=":n39"/>
-            <NamedIndividual abbreviatedIRI=":n36"/>
-            <NamedIndividual abbreviatedIRI=":n37"/>
-            <NamedIndividual abbreviatedIRI=":n34"/>
-            <NamedIndividual abbreviatedIRI=":n35"/>
-            <NamedIndividual abbreviatedIRI=":n32"/>
-            <NamedIndividual abbreviatedIRI=":n33"/>
-            <NamedIndividual abbreviatedIRI=":n31"/>
-            <NamedIndividual abbreviatedIRI=":n27"/>
-            <NamedIndividual abbreviatedIRI=":c4"/>
-            <NamedIndividual abbreviatedIRI=":n28"/>
-            <NamedIndividual abbreviatedIRI=":c5"/>
-            <NamedIndividual abbreviatedIRI=":c6"/>
-            <NamedIndividual abbreviatedIRI=":n25"/>
-            <NamedIndividual abbreviatedIRI=":c7"/>
-            <NamedIndividual abbreviatedIRI=":n26"/>
-            <NamedIndividual abbreviatedIRI=":n23"/>
-            <NamedIndividual abbreviatedIRI=":n24"/>
-            <NamedIndividual abbreviatedIRI=":c1"/>
-            <NamedIndividual abbreviatedIRI=":n21"/>
-            <NamedIndividual abbreviatedIRI=":c2"/>
-            <NamedIndividual abbreviatedIRI=":n22"/>
-            <NamedIndividual abbreviatedIRI=":c3"/>
-            <NamedIndividual abbreviatedIRI=":c8"/>
-            <NamedIndividual abbreviatedIRI=":c9"/>
-            <NamedIndividual abbreviatedIRI=":n29"/>
-            <NamedIndividual abbreviatedIRI=":s4"/>
-            <NamedIndividual abbreviatedIRI=":s5"/>
-            <NamedIndividual abbreviatedIRI=":s6"/>
-            <NamedIndividual abbreviatedIRI=":s7"/>
-            <NamedIndividual abbreviatedIRI=":s1"/>
-            <NamedIndividual abbreviatedIRI=":s2"/>
-            <NamedIndividual abbreviatedIRI=":s3"/>
-            <NamedIndividual abbreviatedIRI=":s8"/>
-            <NamedIndividual abbreviatedIRI=":s9"/>
-            <NamedIndividual abbreviatedIRI=":n16"/>
-            <NamedIndividual abbreviatedIRI=":n17"/>
-            <NamedIndividual abbreviatedIRI=":n14"/>
-            <NamedIndividual abbreviatedIRI=":n15"/>
-            <NamedIndividual abbreviatedIRI=":n12"/>
-            <NamedIndividual abbreviatedIRI=":n13"/>
-            <NamedIndividual abbreviatedIRI=":n98"/>
-            <NamedIndividual abbreviatedIRI=":n99"/>
-            <NamedIndividual abbreviatedIRI=":n11"/>
-            <NamedIndividual abbreviatedIRI=":n18"/>
-            <NamedIndividual abbreviatedIRI=":n19"/>
-            <NamedIndividual abbreviatedIRI=":r3"/>
-            <NamedIndividual abbreviatedIRI=":r4"/>
-            <NamedIndividual abbreviatedIRI=":r5"/>
-            <NamedIndividual abbreviatedIRI=":r6"/>
-            <NamedIndividual abbreviatedIRI=":r1"/>
-            <NamedIndividual abbreviatedIRI=":r2"/>
-            <NamedIndividual abbreviatedIRI=":n96"/>
-            <NamedIndividual abbreviatedIRI=":n97"/>
-            <NamedIndividual abbreviatedIRI=":n94"/>
-            <NamedIndividual abbreviatedIRI=":n95"/>
-            <NamedIndividual abbreviatedIRI=":n92"/>
-            <NamedIndividual abbreviatedIRI=":r7"/>
-            <NamedIndividual abbreviatedIRI=":n93"/>
-            <NamedIndividual abbreviatedIRI=":r8"/>
-            <NamedIndividual abbreviatedIRI=":r9"/>
-            <NamedIndividual abbreviatedIRI=":n91"/>
-            <NamedIndividual abbreviatedIRI=":n89"/>
-            <NamedIndividual abbreviatedIRI=":n87"/>
-            <NamedIndividual abbreviatedIRI=":n88"/>
-            <NamedIndividual abbreviatedIRI=":n85"/>
-            <NamedIndividual abbreviatedIRI=":n86"/>
-            <NamedIndividual abbreviatedIRI=":n83"/>
-            <NamedIndividual abbreviatedIRI=":n84"/>
-            <NamedIndividual abbreviatedIRI=":n81"/>
-            <NamedIndividual abbreviatedIRI=":n82"/>
-            <NamedIndividual abbreviatedIRI=":n78"/>
-            <NamedIndividual abbreviatedIRI=":n79"/>
-            <NamedIndividual abbreviatedIRI=":n76"/>
-            <NamedIndividual abbreviatedIRI=":n77"/>
-            <NamedIndividual abbreviatedIRI=":n74"/>
-            <NamedIndividual abbreviatedIRI=":n75"/>
-            <NamedIndividual abbreviatedIRI=":n72"/>
-            <NamedIndividual abbreviatedIRI=":n73"/>
-            <NamedIndividual abbreviatedIRI=":n71"/>
-            <NamedIndividual abbreviatedIRI=":n69"/>
-            <NamedIndividual abbreviatedIRI=":n67"/>
-            <NamedIndividual abbreviatedIRI=":n68"/>
-            <NamedIndividual abbreviatedIRI=":n65"/>
-            <NamedIndividual abbreviatedIRI=":n66"/>
-            <NamedIndividual abbreviatedIRI=":n63"/>
-            <NamedIndividual abbreviatedIRI=":n64"/>
-            <NamedIndividual abbreviatedIRI=":n61"/>
-            <NamedIndividual abbreviatedIRI=":n62"/>
-            <NamedIndividual abbreviatedIRI=":n58"/>
-            <NamedIndividual abbreviatedIRI=":n59"/>
-            <NamedIndividual abbreviatedIRI=":n56"/>
-            <NamedIndividual abbreviatedIRI=":n57"/>
-            <NamedIndividual abbreviatedIRI=":n54"/>
-            <NamedIndividual abbreviatedIRI=":n55"/>
-            <NamedIndividual abbreviatedIRI=":n52"/>
-            <NamedIndividual abbreviatedIRI=":n53"/>
-            <NamedIndividual abbreviatedIRI=":n51"/>
-        </ObjectOneOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI=":Col"/>
         <ObjectExactCardinality cardinality="1">
@@ -800,8 +687,16 @@
         <NamedIndividual abbreviatedIRI=":n12"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Two"/>
+        <NamedIndividual abbreviatedIRI=":n12"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Five"/>
+        <NamedIndividual abbreviatedIRI=":n14"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -813,6 +708,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":One"/>
         <NamedIndividual abbreviatedIRI=":n16"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -828,8 +727,16 @@
         <NamedIndividual abbreviatedIRI=":n19"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Eight"/>
+        <NamedIndividual abbreviatedIRI=":n21"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Five"/>
+        <NamedIndividual abbreviatedIRI=":n22"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -842,6 +749,14 @@
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Two"/>
+        <NamedIndividual abbreviatedIRI=":n24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nine"/>
+        <NamedIndividual abbreviatedIRI=":n25"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -864,7 +779,15 @@
         <NamedIndividual abbreviatedIRI=":n29"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Six"/>
+        <NamedIndividual abbreviatedIRI=":n29"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n31"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":One"/>
         <NamedIndividual abbreviatedIRI=":n31"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -872,8 +795,16 @@
         <NamedIndividual abbreviatedIRI=":n32"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Three"/>
+        <NamedIndividual abbreviatedIRI=":n32"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Four"/>
+        <NamedIndividual abbreviatedIRI=":n34"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -881,6 +812,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n35"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Six"/>
         <NamedIndividual abbreviatedIRI=":n35"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -896,8 +831,16 @@
         <NamedIndividual abbreviatedIRI=":n38"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Seven"/>
+        <NamedIndividual abbreviatedIRI=":n38"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n39"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nine"/>
+        <NamedIndividual abbreviatedIRI=":n41"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -920,6 +863,10 @@
         <NamedIndividual abbreviatedIRI=":n45"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Five"/>
+        <NamedIndividual abbreviatedIRI=":n46"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n46"/>
     </ClassAssertion>
@@ -928,8 +875,16 @@
         <NamedIndividual abbreviatedIRI=":n47"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Six"/>
+        <NamedIndividual abbreviatedIRI=":n47"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n48"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Four"/>
+        <NamedIndividual abbreviatedIRI=":n49"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -952,12 +907,24 @@
         <NamedIndividual abbreviatedIRI=":n54"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Seven"/>
+        <NamedIndividual abbreviatedIRI=":n54"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n55"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Two"/>
         <NamedIndividual abbreviatedIRI=":n55"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n56"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Eight"/>
+        <NamedIndividual abbreviatedIRI=":n57"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -968,12 +935,24 @@
         <NamedIndividual abbreviatedIRI=":n58"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":One"/>
+        <NamedIndividual abbreviatedIRI=":n58"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nine"/>
+        <NamedIndividual abbreviatedIRI=":n59"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n59"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n61"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Eight"/>
+        <NamedIndividual abbreviatedIRI=":n62"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -984,8 +963,16 @@
         <NamedIndividual abbreviatedIRI=":n63"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Two"/>
+        <NamedIndividual abbreviatedIRI=":n63"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n64"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Four"/>
+        <NamedIndividual abbreviatedIRI=":n65"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -1000,11 +987,19 @@
         <NamedIndividual abbreviatedIRI=":n67"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Seven"/>
+        <NamedIndividual abbreviatedIRI=":n67"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n68"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n69"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Three"/>
         <NamedIndividual abbreviatedIRI=":n69"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1014,6 +1009,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n72"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Four"/>
+        <NamedIndividual abbreviatedIRI=":n73"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -1028,12 +1027,20 @@
         <NamedIndividual abbreviatedIRI=":n75"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Three"/>
+        <NamedIndividual abbreviatedIRI=":n75"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n76"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n77"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Eight"/>
+        <NamedIndividual abbreviatedIRI=":n78"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -1044,12 +1051,24 @@
         <NamedIndividual abbreviatedIRI=":n79"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":One"/>
+        <NamedIndividual abbreviatedIRI=":n79"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n81"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Two"/>
         <NamedIndividual abbreviatedIRI=":n81"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n82"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Five"/>
+        <NamedIndividual abbreviatedIRI=":n83"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -1064,6 +1083,10 @@
         <NamedIndividual abbreviatedIRI=":n85"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Four"/>
+        <NamedIndividual abbreviatedIRI=":n86"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n86"/>
     </ClassAssertion>
@@ -1076,7 +1099,15 @@
         <NamedIndividual abbreviatedIRI=":n88"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Three"/>
+        <NamedIndividual abbreviatedIRI=":n88"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Seven"/>
         <NamedIndividual abbreviatedIRI=":n89"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1088,12 +1119,28 @@
         <NamedIndividual abbreviatedIRI=":n92"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
+        <Class abbreviatedIRI=":One"/>
+        <NamedIndividual abbreviatedIRI=":n92"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Eight"/>
         <NamedIndividual abbreviatedIRI=":n93"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n93"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nine"/>
         <NamedIndividual abbreviatedIRI=":n94"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n94"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Five"/>
+        <NamedIndividual abbreviatedIRI=":n95"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
@@ -1104,11 +1151,19 @@
         <NamedIndividual abbreviatedIRI=":n96"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class abbreviatedIRI=":Seven"/>
+        <NamedIndividual abbreviatedIRI=":n96"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
         <NamedIndividual abbreviatedIRI=":n97"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI=":Num"/>
+        <NamedIndividual abbreviatedIRI=":n98"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Six"/>
         <NamedIndividual abbreviatedIRI=":n98"/>
     </ClassAssertion>
     <ClassAssertion>
