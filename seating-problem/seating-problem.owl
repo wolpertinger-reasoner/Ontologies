@@ -187,6 +187,22 @@
     <SymmetricObjectProperty>
         <ObjectProperty IRI="http://www.example.org/owl#next"/>
     </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+        <Class IRI="http://www.example.org/owl#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
