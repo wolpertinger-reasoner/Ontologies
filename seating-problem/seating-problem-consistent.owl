@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/seating-problem"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/seating-problem">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/seating-problem"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#claire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#bob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#eve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#fl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#fr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#bl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#bm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#br"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/owl#Drunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/owl#Woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/owl#Man"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/owl#dan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/owl#Person"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/owl#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+            <Class IRI="http://www.example.org/owl#Seat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/owl#Woman"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://www.example.org/owl#next"/>
+                <ObjectAllValuesFrom>
+                    <ObjectInverseOf>
+                        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+                    </ObjectInverseOf>
+                    <ObjectComplementOf>
+                        <Class IRI="http://www.example.org/owl#Man"/>
+                    </ObjectComplementOf>
+                </ObjectAllValuesFrom>
+            </ObjectAllValuesFrom>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+            </ObjectInverseOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectUnionOf>
+            <Class IRI="http://www.example.org/owl#Man"/>
+            <Class IRI="http://www.example.org/owl#Woman"/>
+        </ObjectUnionOf>
+        <Class IRI="http://www.example.org/owl#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.example.org/owl#Person"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.example.org/owl#Drunk"/>
+            <Class IRI="http://www.example.org/owl#Woman"/>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="http://www.example.org/owl#alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Man"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+        <NamedIndividual IRI="http://www.example.org/owl#br"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Woman"/>
+        <NamedIndividual IRI="http://www.example.org/owl#claire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.example.org/owl#Drunk"/>
+            <Class IRI="http://www.example.org/owl#Man"/>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="http://www.example.org/owl#dan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Woman"/>
+        <NamedIndividual IRI="http://www.example.org/owl#eve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+        <NamedIndividual IRI="http://www.example.org/owl#fl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+            </ObjectInverseOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.example.org/owl#Person"/>
+                <ObjectComplementOf>
+                    <Class IRI="http://www.example.org/owl#Drunk"/>
+                </ObjectComplementOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="http://www.example.org/owl#fl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+        <NamedIndividual IRI="http://www.example.org/owl#fr"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bm"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <NamedIndividual IRI="http://www.example.org/owl#br"/>
+        <NamedIndividual IRI="http://www.example.org/owl#bm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <NamedIndividual IRI="http://www.example.org/owl#fr"/>
+        <NamedIndividual IRI="http://www.example.org/owl#fl"/>
+    </ObjectPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+        <Class IRI="http://www.example.org/owl#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.example.org/owl#next"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.example.org/owl#sits"/>
+        <Class IRI="http://www.example.org/owl#Seat"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
