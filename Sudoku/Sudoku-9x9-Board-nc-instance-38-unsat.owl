@@ -1,0 +1,1230 @@
+@prefix : <http://www.semanticweb.org/wolpertinger/sudoku> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/wolpertinger/sudoku> .
+
+<http://www.semanticweb.org/wolpertinger/sudoku> rdf:type owl:Ontology ;
+                                                  rdfs:comment "Represents an empty 9x9 Sudokuboard game; i.e. no number is placed on any cell. Use one of the ABoxes (e.g. 9x9-Sudoku-Instance-01)." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> rdf:type owl:ObjectProperty ,
+                                                                                                   owl:AsymmetricProperty ,
+                                                                                                   owl:IrreflexiveProperty ;
+                                                                                          rdfs:range <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+                                                                                                    ] ;
+                                                                                    rdfs:comment """Represents a column in 9x9 Sudoku.
+
+Each column has exactly 1 One ...Nine""" .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf [ rdf:type owl:Class ;
+                                                                                                      owl:unionOf ( <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                                                                                                                    <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+                                                                                                                  )
+                                                                                                    ] ;
+                                                                                    rdfs:comment """Represents one of the numbers One ... Nine
+Initially we assign all 81 individuals n11...n99 to this class.""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                                       <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+                                     )
+                       ] ;
+   rdfs:comment "This axiom yields a non-deterministic choice, ultimately translating to aguessing rule in ASP."
+ ] .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+                                                                                                    ] ;
+                                                                                    rdfs:comment """Represents one of 9 Rows in a 9x9 Sudko.
+
+Each row has exactly 1 One ...Nine.""" .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                                                                                                    ] ,
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> ;
+                                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                      owl:onClass <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+                                                                                                    ] ;
+                                                                                    rdfs:comment """Represents one of the 9 Squares in a 9x9 Sudoku.
+
+Each square has exactly 1 One ...Nine.""" .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96> .
+
+
+###  http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9
+<http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr> ;
+                                                                                   <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber> <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98> ,
+                                                                                                                                                                             <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three>
+                <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two>
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c7>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c8>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c9>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n17>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n18>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n19>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n27>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n28>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n29>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n37>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n38>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n39>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n47>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n48>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n49>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n57>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n58>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n59>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n67>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n68>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n69>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n71>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n72>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n73>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n74>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n75>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n76>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n77>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n78>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n79>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n81>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n82>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n83>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n84>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n85>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n86>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n87>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n88>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n89>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n91>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n92>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n93>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n94>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n95>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n96>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n97>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n98>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n99>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r7>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r8>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r9>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s5>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s6>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s7>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s8>
+                        <http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s9>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

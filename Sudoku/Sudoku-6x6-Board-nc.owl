@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/wolpertinger/sudoku">
-    <Prefix name="" IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/wolpertinger/sudoku"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,1195 +14,1201 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents an empty 9x9 Sudokuboard game; i.e. no number is placed on any cell. Use one of the ABoxes (e.g. 9x9-Sudoku-Instance-01).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents an empty 6x6 Sudokuboard game; i.e. no number is placed on any cell. Use one of the ABoxes (e.g. 6x6-Sudoku-Instance-01).</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI=":Three"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n44"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n32"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n64"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n52"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Four"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n16"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n36"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n24"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n56"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n12"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Six"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n33"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n21"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n65"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n53"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n41"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":One"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n61"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n25"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n45"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Eight"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n66"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n22"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n54"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n42"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n62"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Seven"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Two"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#s5"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n26"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n14"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n46"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n34"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n55"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n43"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n31"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n63"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n51"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Five"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#s6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n15"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n35"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":n23"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI=":r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":Nine"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine"/>
     </Declaration>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Five"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Four"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":One"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Six"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Three"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Two"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Eight"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Five"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Four"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Nine"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This axiom yields a non-deterministic choice, ultimately translating to aguessing rule in ASP.</Literal>
         </Annotation>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
         <ObjectUnionOf>
-            <Class abbreviatedIRI=":Five"/>
-            <Class abbreviatedIRI=":Four"/>
-            <Class abbreviatedIRI=":One"/>
-            <Class abbreviatedIRI=":Six"/>
-            <Class abbreviatedIRI=":Three"/>
-            <Class abbreviatedIRI=":Two"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
         </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":One"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Five"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Four"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":One"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Six"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Three"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Two"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Seven"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Six"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Five"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Four"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":One"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Six"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Three"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI=":hasNumber"/>
-            <Class abbreviatedIRI=":Two"/>
+            <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Three"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":Two"/>
-        <Class abbreviatedIRI=":Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Col"/>
-        <Class abbreviatedIRI=":Num"/>
-        <Class abbreviatedIRI=":Row"/>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":Eight"/>
-        <Class abbreviatedIRI=":Five"/>
-        <Class abbreviatedIRI=":Four"/>
-        <Class abbreviatedIRI=":Nine"/>
-        <Class abbreviatedIRI=":One"/>
-        <Class abbreviatedIRI=":Seven"/>
-        <Class abbreviatedIRI=":Six"/>
-        <Class abbreviatedIRI=":Three"/>
-        <Class abbreviatedIRI=":Two"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Eight"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Five"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Four"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Nine"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#One"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Seven"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Six"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Three"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Two"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Col"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n11"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n12"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n13"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n14"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n15"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n16"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n21"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n22"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n23"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n24"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n25"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n26"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n31"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n32"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n33"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n34"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n35"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n36"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n41"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n42"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n43"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n44"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n45"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n46"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n51"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n52"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n53"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n54"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n55"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n56"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n61"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n62"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n63"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n64"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n65"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Num"/>
-        <NamedIndividual abbreviatedIRI=":n66"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Row"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <NamedIndividual IRI="#s5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI=":Sqr"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr"/>
         <NamedIndividual IRI="#s6"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n11"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n21"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n31"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n41"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n51"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c1"/>
-        <NamedIndividual abbreviatedIRI=":n61"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n12"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n22"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n32"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n42"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n52"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c2"/>
-        <NamedIndividual abbreviatedIRI=":n62"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n13"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n23"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n33"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n43"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n53"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c3"/>
-        <NamedIndividual abbreviatedIRI=":n63"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n14"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n24"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n34"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n44"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n54"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c4"/>
-        <NamedIndividual abbreviatedIRI=":n64"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n15"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n25"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n35"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n45"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n55"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c5"/>
-        <NamedIndividual abbreviatedIRI=":n65"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n16"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n26"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n36"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n46"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n56"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":c6"/>
-        <NamedIndividual abbreviatedIRI=":n66"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#c6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n11"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n12"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n13"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n14"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n15"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r1"/>
-        <NamedIndividual abbreviatedIRI=":n16"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n21"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n22"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n23"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n24"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n25"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r2"/>
-        <NamedIndividual abbreviatedIRI=":n26"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n31"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n32"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n33"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n34"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n35"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r3"/>
-        <NamedIndividual abbreviatedIRI=":n36"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n41"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n42"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n43"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n44"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n45"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r4"/>
-        <NamedIndividual abbreviatedIRI=":n46"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n51"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n52"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n53"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n54"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n55"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r5"/>
-        <NamedIndividual abbreviatedIRI=":n56"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n61"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n62"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n63"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n64"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n65"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":r6"/>
-        <NamedIndividual abbreviatedIRI=":n66"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#r6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n11"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n12"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n12"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n13"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n13"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n21"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n21"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n22"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n22"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s1"/>
-        <NamedIndividual abbreviatedIRI=":n23"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n23"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n14"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n14"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n15"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n15"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n16"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n16"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n24"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n24"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n25"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n25"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s2"/>
-        <NamedIndividual abbreviatedIRI=":n26"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n26"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n31"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n31"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n32"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n32"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n33"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n33"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n41"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n41"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n42"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n42"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s3"/>
-        <NamedIndividual abbreviatedIRI=":n43"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n43"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n34"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n34"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n35"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n35"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n36"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n36"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n44"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n44"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n45"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n45"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <NamedIndividual abbreviatedIRI=":s4"/>
-        <NamedIndividual abbreviatedIRI=":n46"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#s4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n46"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n51"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n51"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n52"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n52"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n53"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n53"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n61"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n61"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n62"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n62"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s5"/>
-        <NamedIndividual abbreviatedIRI=":n63"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n63"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n54"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n54"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n55"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n55"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n56"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n56"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n64"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n64"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n65"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n65"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
         <NamedIndividual IRI="#s6"/>
-        <NamedIndividual abbreviatedIRI=":n66"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#n66"/>
     </ObjectPropertyAssertion>
     <AsymmetricObjectProperty>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
     </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <ObjectComplementOf>
+            <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
+        </ObjectComplementOf>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":hasNumber"/>
-        <Class abbreviatedIRI=":Num"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#hasNumber"/>
+        <Class IRI="http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Col</AbbreviatedIRI>
+        <IRI>http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Col</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents a column in 9x9 Sudoku.
 
 Each column has exactly 1 One ...Nine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Num</AbbreviatedIRI>
+        <IRI>http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Num</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of the numbers One ... Nine
 Initially we assign all 81 individuals n11...n99 to this class.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Row</AbbreviatedIRI>
+        <IRI>http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Row</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of 9 Rows in a 9x9 Sudko.
 
 Each row has exactly 1 One ...Nine.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>:Sqr</AbbreviatedIRI>
+        <IRI>http://www.semanticweb.org/lschweizer/ontologies/2015/3/untitled-ontology-647#Sqr</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents one of the 9 Squares in a 9x9 Sudoku.
 
 Each square has exactly 1 One ...Nine.</Literal>
@@ -1211,5 +1217,5 @@ Each square has exactly 1 One ...Nine.</Literal>
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
