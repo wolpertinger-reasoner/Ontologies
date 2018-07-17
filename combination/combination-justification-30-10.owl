@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/satyadharma/ontologies/2017/6/untitled-ontology-244"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/satyadharma/ontologies/2017/6/untitled-ontology-244">
+    <Prefix name="" IRI="http://www.semanticweb.org/satyadharma/ontologies/2017/6/untitled-ontology-244"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#F"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#H"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#AB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#AD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#D"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.example.org/ont#r"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#N"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#P"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#J"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#sourceIndividual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#L"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#U"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#W"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#Q"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#S"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#Y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#E"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#Main"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#G"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#AC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#C"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#M"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#O"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#I"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.example.org/ont#x4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#K"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#V"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#R"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#T"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#AA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.example.org/ont#Z"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#A"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#AA"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#AB"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#AC"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#AD"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#B"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#C"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#D"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#E"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#F"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#G"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#H"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#I"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#J"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#K"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#L"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#M"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#N"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#O"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#P"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#Q"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#R"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#S"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#T"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#U"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#V"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#W"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#X"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#Y"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <ObjectMinCardinality cardinality="10">
+            <ObjectProperty IRI="http://www.example.org/ont#r"/>
+            <Class IRI="http://www.example.org/ont#Z"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.example.org/ont#A"/>
+        <Class IRI="http://www.example.org/ont#AA"/>
+        <Class IRI="http://www.example.org/ont#AB"/>
+        <Class IRI="http://www.example.org/ont#AC"/>
+        <Class IRI="http://www.example.org/ont#AD"/>
+        <Class IRI="http://www.example.org/ont#B"/>
+        <Class IRI="http://www.example.org/ont#C"/>
+        <Class IRI="http://www.example.org/ont#D"/>
+        <Class IRI="http://www.example.org/ont#E"/>
+        <Class IRI="http://www.example.org/ont#F"/>
+        <Class IRI="http://www.example.org/ont#G"/>
+        <Class IRI="http://www.example.org/ont#H"/>
+        <Class IRI="http://www.example.org/ont#I"/>
+        <Class IRI="http://www.example.org/ont#J"/>
+        <Class IRI="http://www.example.org/ont#K"/>
+        <Class IRI="http://www.example.org/ont#L"/>
+        <Class IRI="http://www.example.org/ont#M"/>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <Class IRI="http://www.example.org/ont#N"/>
+        <Class IRI="http://www.example.org/ont#O"/>
+        <Class IRI="http://www.example.org/ont#P"/>
+        <Class IRI="http://www.example.org/ont#Q"/>
+        <Class IRI="http://www.example.org/ont#R"/>
+        <Class IRI="http://www.example.org/ont#S"/>
+        <Class IRI="http://www.example.org/ont#T"/>
+        <Class IRI="http://www.example.org/ont#U"/>
+        <Class IRI="http://www.example.org/ont#V"/>
+        <Class IRI="http://www.example.org/ont#W"/>
+        <Class IRI="http://www.example.org/ont#X"/>
+        <Class IRI="http://www.example.org/ont#Y"/>
+        <Class IRI="http://www.example.org/ont#Z"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.example.org/ont#Main"/>
+        <NamedIndividual IRI="http://www.example.org/ont#sourceIndividual"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
