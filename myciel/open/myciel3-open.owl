@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/myciel3.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/myciel3.owl">
+    <Prefix name="" IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/myciel3.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#edge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NodeColor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NodeColor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NodeColor0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Node"/>
+        <ObjectUnionOf>
+            <Class IRI="#NodeColor0"/>
+            <Class IRI="#NodeColor1"/>
+            <Class IRI="#NodeColor2"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor0"/>
+        <Class IRI="#Node"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor0"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#edge"/>
+            <ObjectUnionOf>
+                <Class IRI="#NodeColor1"/>
+                <Class IRI="#NodeColor2"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor1"/>
+        <Class IRI="#Node"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor1"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#edge"/>
+            <ObjectUnionOf>
+                <Class IRI="#NodeColor0"/>
+                <Class IRI="#NodeColor2"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor2"/>
+        <Class IRI="#Node"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NodeColor2"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#edge"/>
+            <ObjectUnionOf>
+                <Class IRI="#NodeColor0"/>
+                <Class IRI="#NodeColor1"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NodeColor0"/>
+        <Class IRI="#NodeColor1"/>
+        <Class IRI="#NodeColor2"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Node"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd0"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd1"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd2"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd3"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd4"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd5"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd6"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd7"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd8"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#edge"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd9"/>
+        <NamedIndividual IRI="http://org.semanticweb.wolpertinger/ontologies/graph-coloring/#NodeInd10"/>
+    </ObjectPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#edge"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#edge"/>
+    </IrreflexiveObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
